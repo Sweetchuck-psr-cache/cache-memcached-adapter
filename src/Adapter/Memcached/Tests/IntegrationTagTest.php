@@ -11,9 +11,9 @@
 
 namespace Cache\Adapter\Memcached\Tests;
 
-use Cache\IntegrationTests\CachePoolTest as BaseTest;
+use Cache\IntegrationTests\TaggableCachePoolTest;
 
-class IntegrationPoolTest extends BaseTest
+class IntegrationTagTest extends TaggableCachePoolTest
 {
     use CreatePoolTrait;
 }
