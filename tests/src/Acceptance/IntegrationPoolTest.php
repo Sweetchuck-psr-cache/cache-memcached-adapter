@@ -12,13 +12,23 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Memcached\Tests;
+namespace Cache\Adapter\Memcached\Tests\Acceptance;
 
-use Cache\IntegrationTests\HierarchicalCachePoolTest;
+use Cache\Adapter\Memcached\Tests\Helper\CreatePoolTrait;
+use Cache\IntegrationTests\CachePoolTest as BaseTest;
 
-class IntegrationHierarchyTest extends HierarchicalCachePoolTest
+class IntegrationPoolTest extends BaseTest
 {
     use CreatePoolTrait;
+
+    /**
+     * {@inheritdoc}
+     *
+     * @phpstan-var array<string, string>
+     */
+    protected array $skippedTests = [
+        'testBasicUsageWithLongKey' => 'Long keys are not supported.',
+    ];
 
     /**
      * @after

@@ -12,11 +12,12 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Memcached\Tests;
+namespace Cache\Adapter\Memcached\Tests\Acceptance;
 
-use Cache\IntegrationTests\TaggableCachePoolTest;
+use Cache\Adapter\Memcached\Tests\Helper\CreatePoolTrait;
+use Cache\IntegrationTests\HierarchicalCachePoolTest;
 
-class IntegrationTagTest extends TaggableCachePoolTest
+class IntegrationHierarchyTest extends HierarchicalCachePoolTest
 {
     use CreatePoolTrait;
 

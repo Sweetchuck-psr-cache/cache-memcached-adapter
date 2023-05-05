@@ -12,8 +12,9 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Memcached\Tests;
+namespace Cache\Adapter\Memcached\Tests\Acceptance;
 
+use Cache\Adapter\Memcached\Tests\Helper\CreatePoolTrait;
 use PHPUnit\Framework\TestCase;
 
 class MemcachedCachePoolTest extends TestCase

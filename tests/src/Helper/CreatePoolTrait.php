@@ -12,7 +12,7 @@ declare(strict_types = 1);
  * with this source code in the file LICENSE.
  */
 
-namespace Cache\Adapter\Memcached\Tests;
+namespace Cache\Adapter\Memcached\Tests\Helper;
 
 use Cache\Adapter\Memcached\MemcachedCachePool;
 
